@@ -35,6 +35,23 @@ function areaCirculo(radio) {
   return (radio * radio) * PI;
 }
 
+//Reto: Calcular altura de tríangulos isósceles
+
+function alturaIsosceles(lado1,lado2,base) {
+  if (lado1 == lado2) {
+    const altura = Math.sqrt((lado1**2)-((base/2)**2));
+    if (isNaN(altura)) {
+      alert("Recuerda que uno de los lados no puede ser mayor a la suma de los otros dos lados.")
+    }
+    else {
+      return altura;
+    }
+  }
+  else {
+    alert("Error, los valores dados no corresponden a un tríangulo isósceles. Recuerde que un triángulo isósceles es un tipo de triángulo que tiene dos lados de igual longitud.");
+  }
+}
+
 //Aquí voy a interactuar con el HTML
 
 function calcularPerimetroCuadrado() {
@@ -51,4 +68,13 @@ function calcularAreaCuadrado() {
 
   const area = areaCuadrado(value);
   alert(area);
+}
+
+function calcularAlturaTrianguloIso(){
+  const inputBase = document.getElementById("BaseAltTriangulo").value;
+  const inputLado1 = document.getElementById("Lado1AltTriangulo").value;
+  const inputLado2 = document.getElementById("Lado2AltTriangulo").value;
+
+  const altura = alturaIsosceles(inputLado1,inputLado2,inputBase);
+  alert("La altura del triángulo isósceles es: " + altura);
 }
