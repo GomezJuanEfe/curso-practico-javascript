@@ -15,34 +15,41 @@ function onClickButtonPriceDiscount() {
 }
 
 //Descuento con cupones
-const coupon = [
-  "Martes",
-  "Black_friday",
-  "Domingo_saludable"
+const coupons = [
+  {
+    name: "Martes",
+    discount: 10,
+  },
+  {
+    name: "Black_friday",
+    discount: 15,
+  },
+  {
+    name: "Domingo_saludable",
+    discount: 20,
+  }
 ]
+
+
 
 function onClickButtonPriceDiscountCupon(){
   const InputPriceCupon = document.getElementById("InputPriceCupon").value;
   const InputDiscountCupon = document.getElementById("InputDiscountCupon").value;
 
-  let descuento;
-
-  switch (InputDiscountCupon) {
-    case "Martes":
-      descuento = 15;
-    break;
-    case "Black_friday":
-      descuento = 20;
-    break;
-    case "Domingo_saludable":
-      descuento = 30;
-    break;
-    default:
-      descuento = "Cupón inválido";
-  }
-
-  const precioConDescuento = calcularPrecioConDescuento(InputPriceCupon,descuento);
-
   const resultC = document.getElementById("ResultC");
-  resultC.innerText = "El precio con descuento son: $" + precioConDescuento;
+  
+  const isCouponValueValid = function (coupon) {
+    return coupon.name === InputDiscountCupon;
+    };
+  
+  const userCoupon = coupons.find(isCouponValueValid);
+
+  if (!userCoupon) {
+    resultC.innerText = "El cupón no es valido"
+  } else {
+    const descuento = userCoupon.discount;
+    const precioConDescuento = calcularPrecioConDescuento(InputPriceCupon,descuento);
+
+    resultC.innerText = "El precio con descuento del "+ descuento + "% son: $" + precioConDescuento;
+  }
 }
