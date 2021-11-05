@@ -16,6 +16,40 @@ html {
   font-size: 62.5%;
   font-family: $font-main;
   background-color: yellow;
-  color: $gray;
+  color: $black;
 }
 
+header {
+  height: 90px;
+  margin: 3vh;
+  div.header {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 6px 6px 10px 0px $gray;
+    // border: 1px solid black;
+    display: flex;
+    flex-flow: nowrap row;
+    gap: 10px;
+    div.header__title {
+      font-size: 1.2rem;
+      align-self: center;
+      flex: 2;
+      h1 {
+        text-align: center;
+        line-height: 25px;
+      }
+    }
+    div.header__img {
+      background-image: url(https://pngimg.com/uploads/dog/dog_PNG50321.png);
+      background-size: 150%;
+      background-repeat: no-repeat;
+      background-position: top center;
+      flex: 1;
+    }
+  }
+}
+
+main {
+  margin: 2vh;
+}

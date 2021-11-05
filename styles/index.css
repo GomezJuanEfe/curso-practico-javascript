@@ -8,7 +8,41 @@ html {
   font-size: 62.5%;
   font-family: "Oswald", sans-serif;
   background-color: yellow;
-  color: #A69281;
+  color: #0D0D0D;
+}
+
+header {
+  height: 90px;
+  margin: 3vh;
+}
+header div.header {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  box-shadow: 6px 6px 10px 0px #A69281;
+  display: flex;
+  flex-flow: nowrap row;
+  gap: 10px;
+}
+header div.header div.header__title {
+  font-size: 1.2rem;
+  align-self: center;
+  flex: 2;
+}
+header div.header div.header__title h1 {
+  text-align: center;
+  line-height: 25px;
+}
+header div.header div.header__img {
+  background-image: url(https://pngimg.com/uploads/dog/dog_PNG50321.png);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  flex: 1;
+}
+
+main {
+  margin: 2vh;
 }
 
 /*# sourceMappingURL=index.css.map */
