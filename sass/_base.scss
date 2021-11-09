@@ -1,0 +1,38 @@
+$font-main: 'Oswald', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+$yellow: #F2E205;
+$darkyellow: #A69C14;
+$gray: #A69281;
+$black: #0D0D0D;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: $font-main;
+  font-weight: bolder;
+  background-color: $yellow;
+  color: $black;
+}
+
+@mixin font-title {
+  font-size: 3.4rem;
+  text-align: center;
+  line-height: 30px;
+}
+
+@mixin font-subtitle {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+@mixin font-text {
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+

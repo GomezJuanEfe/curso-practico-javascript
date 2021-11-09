@@ -23,48 +23,26 @@ header {
       }
     }
     div.header__img {
-      background-image: url(https://pngimg.com/uploads/dog/dog_PNG50321.png);
-      background-size: 125px;
+      background-image: url(http://pngimg.com/uploads/dog/dog_PNG2447.png);
+      background-size: 110px;
       background-repeat: no-repeat;
       background-position: top center;
       flex: 1;
+      margin: 15px 0px 0px;
     }
   }
 }
 
-main {
+section.form {
   margin: 3vh;
   div.main {
     width: 90%;
     height: 100%;
     margin: auto;
-    ul {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      gap: 20px;
-      li {
-        max-width: 450px;
-        padding: 5px 15px 20px;
-        box-shadow: 0px 0px 8px 0px base.$darkyellow;
-        list-style: none;
-        flex: 1 250px;
-        a {
-          @include base.font-subtitle;
-        }
-        a:link {
-          text-decoration: none;
-        }
-        a:hover {
-          text-decoration: underline;
-        }
-        a:visited {
-          color: base.$black;
-        }
-        p {
-          @include base.font-text;
-        }
-      }
+    h2 {
+    @include base.font-subtitle
+    }
+    .main__form {
     }
   }
 }

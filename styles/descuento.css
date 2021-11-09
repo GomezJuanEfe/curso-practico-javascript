@@ -39,52 +39,26 @@ header div.header div.header__title h1 {
   line-height: 30px;
 }
 header div.header div.header__img {
-  background-image: url(https://pngimg.com/uploads/dog/dog_PNG50321.png);
-  background-size: 125px;
+  background-image: url(http://pngimg.com/uploads/dog/dog_PNG2447.png);
+  background-size: 110px;
   background-repeat: no-repeat;
   background-position: top center;
   flex: 1;
+  margin: 15px 0px 0px;
 }
 
-main {
+section.form {
   margin: 3vh;
 }
-main div.main {
+section.form div.main {
   width: 90%;
   height: 100%;
   margin: auto;
 }
-main div.main ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 20px;
-}
-main div.main ul li {
-  max-width: 450px;
-  padding: 5px 15px 20px;
-  box-shadow: 0px 0px 8px 0px #A69C14;
-  list-style: none;
-  flex: 1 250px;
-}
-main div.main ul li a {
+section.form div.main h2 {
   font-weight: bold;
   font-size: 1.8rem;
 }
-main div.main ul li a:link {
-  text-decoration: none;
-}
-main div.main ul li a:hover {
-  text-decoration: underline;
-}
-main div.main ul li a:visited {
-  color: #0D0D0D;
-}
-main div.main ul li p {
-  font-size: 1.4rem;
-  font-weight: lighter;
-}
-
 footer {
   height: 80px;
   display: flex;
@@ -114,4 +88,4 @@ footer div.footer a:hover {
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=descuento.css.map */
