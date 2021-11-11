@@ -39,3 +39,7 @@ sass --watch app/sass:public/stylesheets
 # 5 Noviembre 2021
 
 - Hay que buscar imágenes de los perritos en google, poque la mayoría de páginas en internet no dejan utilizar las imágenes.
+
+# 9 Noviembre 2021
+
+Ver fuente para formato: https://codepen.io/tutsplus/pen/PzpoWK

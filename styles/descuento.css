@@ -12,6 +12,37 @@ html {
   color: #0D0D0D;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+section.home {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+section.home div.home__img {
+  width: 30px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Home_Icon.svg/512px-Home_Icon.svg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section.home a:visited {
+  color: #0D0D0D;
+}
+section.home a:link {
+  text-decoration: none;
+}
+section.home a:hover {
+  text-decoration: underline;
+}
+
 header {
   min-height: 90px;
   margin: 3vh;
@@ -54,11 +85,77 @@ section.form div.main {
   width: 90%;
   height: 100%;
   margin: auto;
+  padding: 5px 15px 20px;
+  box-shadow: 0px 0px 8px 0px #A69C14;
 }
 section.form div.main h2 {
   font-weight: bold;
   font-size: 1.8rem;
+  margin-bottom: 20px;
 }
+section.form div.main .main__form {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+section.form div.main .main__form form {
+  margin: 10px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 5px;
+}
+section.form div.main .main__form form div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 5px 0 15px;
+}
+section.form div.main .main__form form input {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  font-family: "Oswald", sans-serif;
+  text-align: right;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid #0D0D0D;
+  background-color: transparent;
+}
+section.form div.main .main__form form input:focus {
+  outline: none;
+}
+section.form div.main .main__form form button {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  font-family: "Oswald", sans-serif;
+  margin: 20px 10px 10px;
+  padding: 10px 10px;
+  background-color: #0D0D0D;
+  color: white;
+  border: none;
+}
+section.form div.main .main__form form button:hover {
+  box-shadow: 6px 6px 10px 0px #A69281;
+  color: #0D0D0D;
+  background-color: #F2E205;
+}
+section.form div.result {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  padding: 10px 15px 20px;
+  box-shadow: 0px 0px 8px 0px #A69C14;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #A69281;
+}
+
 footer {
   height: 80px;
   display: flex;

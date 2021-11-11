@@ -36,3 +36,50 @@ html {
   font-weight: lighter;
 }
 
+@mixin button {
+  button {
+    @include font-text;
+    font-family: $font-main;
+    margin: 20px 10px 10px;
+    padding: 10px 10px;
+    background-color: $black;
+    color: white;
+    border: none;
+  }
+  button:hover {
+    box-shadow: 6px 6px 10px 0px $gray;;
+    color: $black;
+    background-color: $yellow;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+section.home {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 5px;
+  @include font-subtitle;
+  div.home__img {
+    width: 30px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Home_Icon.svg/512px-Home_Icon.svg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  a:visited {
+    color: $black;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+

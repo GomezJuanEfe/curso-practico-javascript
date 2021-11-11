@@ -12,6 +12,37 @@ html {
   color: #0D0D0D;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+section.home {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+section.home div.home__img {
+  width: 30px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Home_Icon.svg/512px-Home_Icon.svg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section.home a:visited {
+  color: #0D0D0D;
+}
+section.home a:link {
+  text-decoration: none;
+}
+section.home a:hover {
+  text-decoration: underline;
+}
+
 header {
   min-height: 90px;
   margin: 3vh;
