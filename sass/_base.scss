@@ -29,6 +29,7 @@ html {
 @mixin font-subtitle {
   font-weight: bold;
   font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
 @mixin font-text {
@@ -50,6 +51,37 @@ html {
     box-shadow: 6px 6px 10px 0px $gray;;
     color: $black;
     background-color: $yellow;
+  }
+}
+
+@mixin footer {
+
+  footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div.footer {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-flow: column nowrap;
+      @include font-text;
+      a {
+        font-family: $font-main;
+        font-weight: bold;
+      }
+      a:link {
+        text-decoration: none;
+      }
+      a:visited {
+        color: $black;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 

@@ -25,7 +25,6 @@ section.home {
   gap: 5px;
   font-weight: bold;
   font-size: 1.8rem;
-  margin-bottom: 20px;
 }
 section.home div.home__img {
   width: 30px;
@@ -71,11 +70,12 @@ header div.header div.header__title h1 {
   line-height: 30px;
 }
 header div.header div.header__img {
-  background-image: url(http://pngimg.com/uploads/dog/dog_PNG135.png);
-  background-size: 120px;
+  background-image: url(http://pngimg.com/uploads/dog/dog_PNG2432.png);
+  background-size: 150px;
   background-repeat: no-repeat;
   background-position: top center;
   flex: 1;
+  margin-top: 10px;
 }
 
-/*# sourceMappingURL=moda.css.map */
+/*# sourceMappingURL=promedio.css.map */

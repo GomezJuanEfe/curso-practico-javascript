@@ -23,32 +23,52 @@
       <div class="header__img"></div>
     </div>
   </header>
-  <section>
-    <h2>Calcula el área y perímetro de un cuadrado</h2>
-    <form>
-      <label for="InputCuadrado">Escribe cuánto mide el área de tu cuadrado</label>
-      <input id="InputCuadrado" type="number">
-      <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
-      <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
-    </form>
+  <section class="square">
+    <div class="main">
+      <h2>Calcula el área y perímetro de un cuadrado</h2>
+      <div class="form--square">
+        <form>
+          <label for="InputCuadrado">Escribe cuánto mide el área de tu cuadrado</label>
+          <input id="InputCuadrado" type="number">
+        </form>
+        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+        <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+      </div>
+    </div>
   </section>
-  <section>
-    <h2>Calcula la altura de un triángulo isósceles</h2>
-    <form action="">
-      <p>Escribe los valores para calcular la altura de un triángulo isósceles.</p>
-      <label for="BaseAltTriangulo">Base:</label>
-      <input id="BaseAltTriangulo" type="number"><br>
-      <label for="Lado1AltTriangulo">Lado 1:</label>
-      <input id="Lado1AltTriangulo" type="number"><br>
-      <label for="Lado2AltTriangulo">Lado 2:</label>
-      <input id="Lado2AltTriangulo" type="number"><br>
-      <button type="button" onclick="calcularAlturaTrianguloIso()">Calcular altura</button>
-    </form>
+  <section class="triangle">
+    <div class="main">
+      <h2>Calcula la altura de un triángulo isósceles</h2>
+      <div class="form--triangle">
+        <p>Escribe los valores para calcular la altura de un triángulo isósceles.</p>
+        <form action="">
+          <div>
+            <label for="BaseAltTriangulo">Base:</label>
+            <input id="BaseAltTriangulo" type="number"><br>
+          </div>
+          <div>
+            <label for="Lado1AltTriangulo">Lado 1:</label>
+            <input id="Lado1AltTriangulo" type="number"><br>
+          </div>
+          <div>
+            <label for="Lado2AltTriangulo">Lado 2:</label>
+            <input id="Lado2AltTriangulo" type="number"><br>
+          </div>
+        </form>
+        <button type="button" onclick="calcularAlturaTrianguloIso()">Calcular altura</button>
+      </div>
+    </div>
   </section>
   <section class="home">
     <div class="home__img"></div>
     <a href="./index.html">Inicio</a>
   </section>
+  <footer>
+    <div class="footer">
+      <p>Coded by <a href="https://github.com/GomezJuanEfe">Juan Felipe Gómez</a></p>
+      <p><a href="https://twitter.com/GomezJuanEfe">Twitter</a></p>
+    </div>
+  </footer>
   <script src="./figuras.js"></script>
 </body>
 </html>

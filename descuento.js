@@ -12,6 +12,7 @@ function calcularPrecioConDescuento(precio, descuento) {
 }
 
 function onClickButtonPriceDiscount() {
+  removeNode();
   createDivNode();
   calculateValues();
 }
@@ -83,7 +84,7 @@ const createDivNode = () => {
     discount.id = "discount";
   let total = document.createElement('p');
     total.id = "total";
-
+  
   container.appendChild(node);
   
   node.appendChild(amount);
@@ -91,4 +92,14 @@ const createDivNode = () => {
   node.appendChild(total);
 
   return container;
+}
+
+function removeNode() {
+  let node = document.querySelector('.result');
+
+  if (node === null) {
+    return
+  } else {
+    node.remove();
+  }
 }
