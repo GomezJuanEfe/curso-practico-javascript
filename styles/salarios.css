@@ -71,12 +71,41 @@ header div.header div.header__title h1 {
   line-height: 30px;
 }
 header div.header div.header__img {
-  background-image: url(http://pngimg.com/uploads/dog/dog_PNG2418.png);
-  background-size: 160px;
+  background-image: url(http://pngimg.com/uploads/dog/dog_PNG2435.png);
+  background-size: 70px;
   background-repeat: no-repeat;
   background-position: top center;
   flex: 1;
   margin-top: 10px;
+}
+
+footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div.footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+footer div.footer a {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
+footer div.footer a:link {
+  text-decoration: none;
+}
+footer div.footer a:visited {
+  color: #0D0D0D;
+}
+footer div.footer a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=salarios.css.map */

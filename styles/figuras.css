@@ -149,6 +149,22 @@ section.square div.main div.form--triangle form, section.triangle div.main div.f
   align-items: center;
   gap: 5px;
 }
+section.square div.main div.result, section.triangle div.main div.result {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  padding: 10px 15px 20px;
+  box-shadow: 0px 0px 8px 0px #A69C14;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #A69281;
+}
+section.square div.main div.result p, section.triangle div.main div.result p {
+  text-align: center;
+}
 
 footer {
   height: 80px;

@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./styles/mediana.css">
-  <title>Document</title>
+  <title>Mediana</title>
 </head>
 <body>
   <header>
@@ -20,16 +20,43 @@
       <div class="header__img"></div>
     </div>
   </header>
-  <form action="">
-    <label for="InputList">Escribe acá los numeros</label>
-    <input id="InputList" type="text">
-    <button type="button" onclick="showMedia()">Calcular mediana</button>
-    <p id="MediaP"></p>
-  </form>
+  <section class="form">
+    <div class="main">
+      <h2>Calcula la mediana a partir de una lista de números dada.</h2>
+      <p>
+        La mediana representa el valor de la variable de posición central en un conjunto de datos ordenados.
+      </p>
+      <p>
+        Ingresa la lista de números sobre los cuales quieres hayar la mediana separados por comas.
+      </p>
+      <p>
+        Ej: 1,2,3,4,5.
+      </p>
+      <div class="main__form">
+        <form action="">
+          <div class="main__form-mediana">
+            <label for="InputList">Escribe acá la lista de numeros:</label>
+            <input id="InputList" type="text">
+          </div>
+          <button type="button" onclick="showMedia()">Calcular mediana</button>
+          <p id="MediaP"></p>
+        </form>
+        <div class="result" id="result-media">
+          <p id="resMedia">Aquí va la mediana</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="home">
     <div class="home__img"></div>
     <a href="./index.html">Inicio</a>
   </section>
+  <footer>
+    <div class="footer">
+      <p>Coded by <a href="https://github.com/GomezJuanEfe">Juan Felipe Gómez</a></p>
+      <p><a href="https://twitter.com/GomezJuanEfe">Twitter</a></p>
+    </div>
+  </footer>
   <script src="./mediana.js"></script>
 </body>
 </html>

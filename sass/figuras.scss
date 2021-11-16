@@ -82,6 +82,21 @@ section.square, section.triangle {
         gap: 5px;
       }
     }
+    div.result {
+      @include base.font-text;
+      width: 90%;
+      height: 100%;
+      margin: auto;
+      padding: 10px 15px 20px;
+      box-shadow: 0px 0px 8px 0px base.$darkyellow;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      background-color: base.$gray;
+      p {
+        text-align: center;
+      }
+    }
   }
 }
 

@@ -20,16 +20,41 @@
       <div class="header__img"></div>
     </div>
   </header>
-  <form action="">
-    <label for="InputList">Escribe acá los numeros</label>
-    <input id="InputList" type="text">
-    <button type="button" onclick="showModa()">Calcular moda</button>
-    <p id="ModaP"></p>
-  </form>
+  <section class="form">
+    <div class="main">
+      <h2>Calcula la moda a partir de una lista de números dada.</h2>
+      <p>
+        La moda es el valor que aparece con mayor frecuencia en un conjunto de datos.
+      </p>
+      <p>
+        Ingresa la lista de números sobre los cuales quieres hayar la moda separados por comas.
+      </p>
+      <p>
+        Ej: 1,2,3,4,5.
+      </p>
+      <div class="main__form">
+        <form action="">
+          <label for="InputList">Escribe acá la lista de numeros:</label>
+          <input id="InputList" type="text">
+          <button type="button" onclick="showModa()">Calcular moda</button>
+          <p id="ModaP"></p>
+        </form>
+        <div class="result" id="result-moda">
+          <p id="resModa">Aquí va la moda</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="home">
     <div class="home__img"></div>
     <a href="./index.html">Inicio</a>
   </section>
+  <footer>
+    <div class="footer">
+      <p>Coded by <a href="https://github.com/GomezJuanEfe">Juan Felipe Gómez</a></p>
+      <p><a href="https://twitter.com/GomezJuanEfe">Twitter</a></p>
+    </div>
+  </footer>
   <script src="./moda.js"></script>
 </body>
 </html>

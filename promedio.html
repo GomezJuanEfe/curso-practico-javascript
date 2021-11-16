@@ -20,10 +20,43 @@
       <div class="header__img"></div>
     </div>
   </header>
+  <section class="form">
+    <div class="main">
+      <h2>Calcula el promedio a partir de una lista de números dada.</h2>
+      <p>
+        Es el valor resultante que se obtiene al dividir la sumatoria de un conjunto de datos sobre el número total de datos.
+      </p>
+      <p>
+        Ingresa la lista de números sobre los cuales quieres hayar el promedio separados por comas.
+      </p>
+      <p>
+        Ej: 1,2,3,4,5.
+      </p>
+      <div class="main__form">
+        <form action="">
+          <div class="main__form-mediana">
+            <label for="InputList">Escribe acá la lista de numeros:</label>
+            <input id="InputList" type="text">
+          </div>
+          <button type="button" onclick="showPromedio()">Calcular mediana</button>
+          <p id="PromedioP"></p>
+        </form>
+        <div class="result" id="result-media">
+          <p id="resMedia">Aquí va el promedio</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="home">
     <div class="home__img"></div>
     <a href="./index.html">Inicio</a>
   </section>
+  <footer>
+    <div class="footer">
+      <p>Coded by <a href="https://github.com/GomezJuanEfe">Juan Felipe Gómez</a></p>
+      <p><a href="https://twitter.com/GomezJuanEfe">Twitter</a></p>
+    </div>
+  </footer>
   <script src="./promedio.js"></script>
 </body>
 </html>

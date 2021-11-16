@@ -32,3 +32,73 @@ header {
     }
   }
 }
+
+section.form {
+  margin: 3vh;
+  div.main {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding: 5px 15px 20px;
+    box-shadow: 0px 0px 8px 0px base.$darkyellow;
+    h2 {
+      @include base.font-subtitle;
+    }
+    p {
+      @include base.font-text;
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+    .main__form {
+      @include base.font-text;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      form {
+        margin: 10px 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        gap: 5px;
+        div {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          gap: 10px;
+          margin: 5px 0 15px;
+        }
+        input {
+          @include base.font-text;
+          font-family: base.$font-main;
+          text-align: right;
+          padding: 5px 0;
+          border: none;
+          border-bottom: 1px solid base.$black;
+          background-color: transparent;
+        }
+        input:focus {
+          outline: none;
+  
+        }
+        @include base.button;
+      }
+      div.result {
+        @include base.font-text;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        padding: 10px 15px 20px;
+        box-shadow: 0px 0px 8px 0px base.$darkyellow;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        background-color: base.$gray;
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@include base.footer;

@@ -23,8 +23,8 @@ header {
       }
     }
     div.header__img {
-      background-image: url(http://pngimg.com/uploads/dog/dog_PNG2418.png);
-      background-size: 160px;
+      background-image: url(http://pngimg.com/uploads/dog/dog_PNG2435.png);
+      background-size: 70px;
       background-repeat: no-repeat;
       background-position: top center;
       flex: 1;
@@ -32,3 +32,5 @@ header {
     }
   }
 }
+
+@include base.footer;
