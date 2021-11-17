@@ -27,24 +27,19 @@
       <h2>Calcula el área y perímetro de un cuadrado</h2>
       <div class="form--square">
         <form>
-          <label for="InputCuadrado">Escribe cuánto mide el área de tu cuadrado</label>
+          <label for="InputCuadrado">Escribe cuánto mide (cm) el lado del cuadrado para calcular el perímetro o el área.</label>
           <input id="InputCuadrado" type="number">
         </form>
-        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
-        <div class="result" id="result-perimetro">
-          <p id="resPerimetroCuadrado">Aquí va el perimetro</p>
-        </div>
-        <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
-        <div class="result" id="result-area">
-          <p id="resAreaCuadrado">Aquí va el area</p>
-        </div>
-      </div>
+        <button id="showPerimetroCuadrado" type="button" onclick="showPerimetroCuadrado()">Calcular el perímetro</button>
+        <button id="showAreaCuadrado" type="button" onclick="showAreaCuadrado()">Calcular el área</button>
+       </div>
     </div>
   </section>
   <section class="triangle">
     <div class="main">
       <h2>Calcula la altura de un triángulo isósceles</h2>
       <div class="form--triangle">
+        <p>Un triángulo isósceles es un tipo de triángulo que tiene, al menos, dos lados de igual longitud.</p>
         <p>Escribe los valores para calcular la altura de un triángulo isósceles.</p>
         <form action="">
           <div>
@@ -60,10 +55,7 @@
             <input id="Lado2AltTriangulo" type="number"><br>
           </div>
         </form>
-        <button type="button" onclick="calcularAlturaTrianguloIso()">Calcular altura</button>
-        <div class="result" id="result-alturatriangulo">
-          <p id="resAlturaTriangulo">Aquí va la altura del triangulo</p>
-        </div>
+        <button id="showAlturaTrianguloIso" type="button" onclick="showAlturaTrianguloIso()">Calcular altura</button>
       </div>
     </div>
   </section>

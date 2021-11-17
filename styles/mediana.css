@@ -83,6 +83,8 @@ section.form {
   margin: 3vh;
 }
 section.form div.main {
+  display: flex;
+  flex-flow: nowrap column;
   width: 90%;
   height: 100%;
   margin: auto;
@@ -99,6 +101,7 @@ section.form div.main p {
   font-weight: lighter;
   margin-bottom: 10px;
   text-align: justify;
+  align-self: center;
 }
 section.form div.main .main__form {
   font-size: 1.4rem;

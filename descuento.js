@@ -1,5 +1,5 @@
 function formatNumber (val) {
-  let options = {style:'currency', currency:'COP'};
+  let options = {style:'currency', currency:'COP', maximumFractionDigits: 0};
   let numberFormat =  new Intl.NumberFormat('es-CO',options);
 
   return numberFormat.format(val);

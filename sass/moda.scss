@@ -35,6 +35,8 @@ header {
 section.form {
   margin: 3vh;
   div.main {
+    display: flex;
+    flex-flow: nowrap column;
     width: 90%;
     height: 100%;
     margin: auto;
@@ -47,6 +49,7 @@ section.form {
       @include base.font-text;
       margin-bottom: 10px;
       text-align: justify;
+      align-self: center;
     }
     .main__form {
       @include base.font-text;

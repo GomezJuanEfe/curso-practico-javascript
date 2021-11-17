@@ -142,6 +142,9 @@ section.square div.main div.form--triangle, section.triangle div.main div.form--
   flex-flow: column nowrap;
   align-items: center;
 }
+section.square div.main div.form--triangle p, section.triangle div.main div.form--triangle p {
+  margin-bottom: 15px;
+}
 section.square div.main div.form--triangle form, section.triangle div.main div.form--triangle form {
   margin: 10px 0;
   display: flex;
