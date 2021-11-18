@@ -27,7 +27,7 @@
         La moda es el valor que aparece con mayor frecuencia en un conjunto de datos.
       </p>
       <p>
-        Ingresa la lista de números sobre los cuales quieres hayar la moda separados por comas.
+        Ingresa la lista de números sobre los cuales quieres hayar la moda separados por comas. En caso de no haber números que ser repitan, se devolverá el número más alto.
       </p>
       <p>
         Ej: 1,2,3,4,5.
@@ -36,12 +36,8 @@
         <form action="">
           <label for="InputList">Escribe acá la lista de numeros:</label>
           <input id="InputList" type="text">
-          <button type="button" onclick="showModa()">Calcular moda</button>
-          <p id="ModaP"></p>
+          <button id="showModa" type="button" onclick="showModaFn()">Calcular moda</button>
         </form>
-        <div class="result" id="result-moda">
-          <p id="resModa">Aquí va la moda</p>
-        </div>
       </div>
     </div>
   </section>

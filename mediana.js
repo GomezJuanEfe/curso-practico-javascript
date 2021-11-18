@@ -56,7 +56,10 @@ function calcularMediana(lista) {
   return mediana;
 }
 
-function showMedia() {
+function showMediana() {
+  removeNode();
+  createNode();
+
   const inputList = document.getElementById("InputList").value;
   const separedValues = inputList.split(",");
   
@@ -66,7 +69,29 @@ function showMedia() {
 
   const resultado = calcularMediana(separedValues);
 
-  const MediaP = document.getElementById("MediaP");
+  const res = document.getElementById('resMedia');
 
-  MediaP.innerText = "La mediana es: " + resultado;
+  res.innerText = "La mediana es: " + resultado;
+}
+
+function createNode() {
+  let container = document.querySelector('#showMedia');
+  let node = document.createElement('div');
+    node.className = 'result';
+    node.id = 'result-media';
+  let res = document.createElement('p');
+    res.id = 'resMedia';
+
+  container.insertAdjacentElement('afterend', node);
+  node.appendChild(res);
+}
+
+function removeNode() {
+  let node = document.querySelector('#result-media');
+
+  if (node === null) {
+    return
+  } else {
+    node.remove();
+  }
 }

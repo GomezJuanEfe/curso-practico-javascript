@@ -113,7 +113,7 @@ function areaCirculo(radio) {
 
 //Reto: Calcular altura de tríangulos isósceles
 
-function formatNumber (val) {
+function formatNumber(val) {
   let options = {style:'decimal', maximumFractionDigits: 2};
   let numberFormat =  new Intl.NumberFormat('es-CO',options);
 
