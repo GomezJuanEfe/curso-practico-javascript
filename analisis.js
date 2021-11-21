@@ -92,7 +92,13 @@ function analyze() {
   removeNode();
 
   const mediana = formatNumber(medianaGeneralCol());
-  const medianaTop10 = formatNumber(medianaTop10Col());
+  let medianaTop10 = medianaTop10Col();
+
+  if (isNaN(medianaTop10)) {
+    medianaTop10 = 'No hay valores suficientes para hacer análisis.';
+  } else {
+    medianaTop10 = formatNumber(medianaTop10);
+  }
   
   createPAnalysis();
 

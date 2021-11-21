@@ -105,6 +105,7 @@ main div.main ul li a {
   margin-bottom: 20px;
 }
 main div.main ul li a:link {
+  color: #0D0D0D;
   text-decoration: none;
 }
 main div.main ul li a:hover {

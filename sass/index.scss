@@ -53,6 +53,7 @@ main {
           @include base.font-subtitle;
         }
         a:link {
+          color: base.$black;
           text-decoration: none;
         }
         a:hover {
