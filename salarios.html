@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./styles/salarios.css">
   <title>Salarios</title>
 </head>
-<body>
+<body onload="showArrayElements()">
   <header>
     <div class="header">
       <div class="header__title">
@@ -20,6 +20,35 @@
       <div class="header__img"></div>
     </div>
   </header>
+  <section class="input">
+    <div class="main">
+      <h2>Ingresar datos a calcular</h2>
+      <div class="form--input">
+        <p>Aquí vamos a calcular la mediana general (de toda la lista) y la mediana del top 10 (solo de 10 salarios más altos) de una lista de salarios. </p>
+        <p>La lista que ves abajo son algunos datos que se añaden por defecto, puedes borrarlos todos y añadir nuevos si deseas.</p>
+        <p>Escribe a continuación los datos que deseas ingresar para hacer el cálculo.</p>
+        <form action="">
+          <div>
+            <label for="name-person">Nombre:</label>
+            <input id="name-person" type="text"><br>
+          </div>
+          <div>
+            <label for="salary-person">Salario</label>
+            <input id="salary-person" type="number"><br>
+          </div>
+        </form>
+        <div class="buttons">
+          <button id="addPerson" type="button" onclick="addPerson()">Añadir persona</button>
+          <button id="removeAll" type="button" onclick="removeAll()">Borra todo</button>
+          <button id="analize" type="button" onclick="analize()">Hacer análisis</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="input person">
+    <div id="person" class="main person">
+    </div>
+  </section>
   <section class="home">
     <div class="home__img"></div>
     <a href="./index.html">Inicio</a>

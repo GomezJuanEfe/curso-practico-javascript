@@ -79,6 +79,82 @@ header div.header div.header__img {
   margin-top: 10px;
 }
 
+section.input {
+  margin: 3vh;
+}
+section.input div.main {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  padding: 5px 15px 20px;
+  box-shadow: 0px 0px 8px 0px #A69C14;
+}
+section.input div.main h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+section.input div.main input {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid #0D0D0D;
+  background-color: transparent;
+}
+section.input div.main input:focus {
+  outline: none;
+}
+section.input div.main button {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  font-family: "Oswald", sans-serif;
+  margin: 20px 10px 10px;
+  padding: 10px 10px;
+  background-color: #0D0D0D;
+  color: white;
+  border: none;
+}
+section.input div.main button:hover {
+  box-shadow: 6px 6px 10px 0px #A69281;
+  color: #0D0D0D;
+  background-color: #F2E205;
+}
+section.input div.main div.form--input p {
+  margin-bottom: 15px;
+}
+section.input div.main div.form--input .buttons {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+section.input div.main div.form--input .buttons :first-child {
+  margin-left: calc(47.5% - 45px);
+  margin-right: calc(47.5% - 45px);
+}
+section.input div.main div.form--input form {
+  margin: 10px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 5px;
+}
+
+section.person .person {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+}
+section.person .person .element {
+  box-shadow: 3px 3px 10px 1px black;
+  padding: 5px 5px;
+}
+
 footer {
   height: 80px;
   display: flex;

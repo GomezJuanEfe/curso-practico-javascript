@@ -33,4 +33,66 @@ header {
   }
 }
 
+section.input {
+  margin: 3vh;
+  div.main {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding: 5px 15px 20px;
+    box-shadow: 0px 0px 8px 0px base.$darkyellow;
+    h2 {
+      @include base.font-subtitle;
+    }
+    input {
+      @include base.font-text;
+      font-family: base.$font-main;
+      text-align: center;
+      padding: 5px 0;
+      border: none;
+      border-bottom: 1px solid base.$black;
+      background-color: transparent;
+    }
+    input:focus {
+      outline: none;
+    }
+    @include base.button;
+    div.form--input {
+      p {
+        margin-bottom: 15px;
+      }
+      .buttons {
+        :first-child {
+          margin-left: calc(47.5% - 45px);
+          margin-right: calc(47.5% - 45px);
+        }
+        @include base.font-text;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+      form {
+        margin: 10px 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+}
+
+section.person {
+  .person{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    .element {
+      box-shadow: 3px 3px 10px 1px black;
+      padding: 5px 5px;
+    }
+  }
+}
+
 @include base.footer;

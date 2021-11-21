@@ -1,6 +1,6 @@
 // Helpers (Utils)
-function esPar(nuemrito) {
-  return (nuemrito % 2 === 0);
+function esPar(numerito) {
+  return (numerito % 2 === 0);
 }
 
 function calcularMediaAritmetica(lista) {
@@ -11,11 +11,10 @@ function calcularMediaAritmetica(lista) {
   );
     
   const promedioLista = sumaLista / lista.length;
-  
   return promedioLista;
 }
 
-//Calcualdora de medianaas
+//Calcualdora de medianas
 function medianaSalarios(lista){
   const mitad = parseInt(lista.length / 2);
 
@@ -32,30 +31,44 @@ function medianaSalarios(lista){
 }
 
 //Mediana General
-const salariosCol = colombia.map(
-  function(personita) {
-    return personita.salary;
-  }
-);
 
-const salariosColSorted = salariosCol.sort(
-  function(salaryA, salaryB){
-    return salaryA - salaryB;
-  }
-);
+function salariosColSorted() {
+  const salariosCol = colombia.map(
+    function(personita) {
+      return personita.salary;
+    }
+  );
+  
+  const salariosColSorted = salariosCol.sort(
+    function(salaryA, salaryB){
+      return salaryA - salaryB;
+    }
+  );
+  
+  return salariosColSorted;
+}
 
-const medianaGeneralCol = medianaSalarios(salariosColSorted);
+const medianaGeneralCol = () => {
+  const salariosToAnalize = salariosColSorted();
+  return medianaSalarios(salariosToAnalize);
+}
 
 //Mediana del top 10%
-const spliceStart = (salariosColSorted.length * 90) / 100;
-const spliceCount = salariosColSorted.length - spliceStart;
 
-const salariosColTop10 = salariosColSorted.splice(
-  spliceStart,
-  spliceCount,
-);
+function medianaTop10Col() {
+  const salariosToAnalize = salariosColSorted();
 
-const medianaTop10Col = medianaSalarios(salariosColTop10);
+  const spliceStart = (salariosToAnalize.length * 90) / 100;
+  const spliceCount = salariosToAnalize.length - spliceStart;
+  
+  const salariosColTop10 = salariosToAnalize.splice(
+    spliceStart,
+    spliceCount,
+  );
+  
+  const medianaTop10Col = medianaSalarios(salariosColTop10);
+  return medianaTop10Col;
+}
 
 //
 
@@ -63,3 +76,68 @@ console.log({
   medianaGeneralCol,
   medianaTop10Col,
 });
+
+
+//Interacción con el DOM
+
+const inputName = document.getElementById('name-person');
+const inputSalary = document.getElementById('salary-person');
+
+function addElementToArray() {
+  colombia.push({
+  name: inputName.value,
+  salary: parseInt(inputSalary.value)
+  })
+}
+
+function createDivPerson(name, salary) {
+  const node = document.querySelector('#person');
+
+  const divPerson = document.createElement('div');
+    divPerson.className = 'element';
+
+  const nameP = document.createElement('p');
+    nameP.innerText = 'Nombre: ' + name;
+  const salaryP = document.createElement('p');
+    salaryP.innerText = 'Salario: ' + salary
+
+  node.appendChild(divPerson);
+  divPerson.appendChild(nameP);
+  divPerson.appendChild(salaryP);
+}
+
+function showArrayElements() {
+  for (let i = 0; i < colombia.length; i++) {
+    createDivPerson(colombia[i].name,colombia[i].salary);
+  }
+}
+
+
+function addPerson() {
+  if (inputName.value === '' || inputName.value === '' ) {
+    alert('Debe ingresar valores válidos');
+  } else {
+    removeDivPersonElements();
+    addElementToArray();
+    showArrayElements();
+  }
+}
+
+function removeArrayElements() {
+  colombia = [];
+  console.log(colombia);
+}
+
+function removeDivPersonElements() {
+  const allDivPersonElements = document.querySelectorAll('.element');
+  const allDivPersonElementsArr = [...allDivPersonElements];
+  
+  for (let i = 0; i < allDivPersonElementsArr.length; i++) {
+    allDivPersonElementsArr[i].remove();
+  }
+}
+
+function removeAll() {
+  removeArrayElements();
+  removeDivPersonElements();
+}
