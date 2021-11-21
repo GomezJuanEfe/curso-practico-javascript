@@ -137,11 +137,17 @@ section.input div.main div.form--input .buttons :first-child {
   margin-right: calc(47.5% - 45px);
 }
 section.input div.main div.form--input form {
+  font-size: 1.4rem;
+  font-weight: lighter;
   margin: 10px 0;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   gap: 5px;
+}
+section.input div.main .form--input {
+  font-size: 1.4rem;
+  font-weight: lighter;
 }
 
 section.person .person {
@@ -151,8 +157,16 @@ section.person .person {
   gap: 10px;
 }
 section.person .person .element {
+  font-size: 1.1rem;
+  font-weight: lighter;
   box-shadow: 3px 3px 10px 1px black;
   padding: 5px 5px;
+}
+
+section.analysis p {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  text-align: center;
 }
 
 footer {

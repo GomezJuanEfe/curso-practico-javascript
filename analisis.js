@@ -1,4 +1,11 @@
 // Helpers (Utils)
+function formatNumber (val) {
+  let options = {style:'currency', currency:'COP', maximumFractionDigits: 0};
+  let numberFormat =  new Intl.NumberFormat('es-CO',options);
+
+  return numberFormat.format(val);
+}
+
 function esPar(numerito) {
   return (numerito % 2 === 0);
 }
@@ -70,7 +77,38 @@ function medianaTop10Col() {
   return medianaTop10Col;
 }
 
-//
+//Interacción de DOM - Análisis
+
+function createPAnalysis() {
+  const node = document.getElementById('analysis');
+
+  const pTag = document.createElement('p');
+    pTag.id = 'analysisP';
+
+  node.appendChild(pTag);
+}
+
+function analyze() {
+  removeNode();
+
+  const mediana = formatNumber(medianaGeneralCol());
+  const medianaTop10 = formatNumber(medianaTop10Col());
+  
+  createPAnalysis();
+
+  const node = document.querySelector('#analysisP');
+    node.innerText = 'La mediana es: ' + mediana + '\n La media del top 10 de los salarios es: ' + medianaTop10;
+}
+
+function removeNode() {
+  let node = document.querySelector('#analysisP');
+
+  if (node === null) {
+    return
+  } else {
+    node.remove();
+  }
+}
 
 console.log({
   medianaGeneralCol,
@@ -114,6 +152,8 @@ function showArrayElements() {
 
 
 function addPerson() {
+  removeNode();
+
   if (inputName.value === '' || inputName.value === '' ) {
     alert('Debe ingresar valores válidos');
   } else {
@@ -138,6 +178,7 @@ function removeDivPersonElements() {
 }
 
 function removeAll() {
+  removeNode();
   removeArrayElements();
   removeDivPersonElements();
 }
